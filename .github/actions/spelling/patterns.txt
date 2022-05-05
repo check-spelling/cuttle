@@ -1,0 +1,10 @@
+# See https://github.com/check-spelling/check-spelling/wiki/Configuration-Examples:-patterns
+
+\%d
+
+# acceptable duplicates
+\s(long|LONG) \g{-1}\s
+\@param\s+(\w+)\s+\g{-1}\s
+
+# ignore long runs of a single character:
+\b([A-Za-z])\g{-1}{3,}\b
